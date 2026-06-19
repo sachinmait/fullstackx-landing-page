@@ -795,7 +795,7 @@ section:nth-child(even) { background: var(--bg-alt); }
 
 .contact-details a {
   color: var(--secondary);
-  word-break: break-all;
+  overflow-wrap: break-word;
 }
 
 .contact-details a:hover { color: var(--accent); }

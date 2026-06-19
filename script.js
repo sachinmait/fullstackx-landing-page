@@ -66,7 +66,7 @@
       const target = document.querySelector(this.getAttribute('href'));
       if (!target) return;
       e.preventDefault();
-      const offset = navbar ? navbar.offsetHeight : 0;
+      const offset = navbar.offsetHeight;
       const top = target.getBoundingClientRect().top + window.scrollY - offset - 8;
       window.scrollTo({ top: top, behavior: 'smooth' });
     });
