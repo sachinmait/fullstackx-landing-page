@@ -1,31 +1,639 @@
-HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>FullStackX</title>
-    <style>
-        body { font-family: 'Courier New', monospace; background: #f0f0f0; color: #000; padding: 40px; }
-        .box { border: 4px solid #000; background: #fff; padding: 30px; box-shadow: 8px 8px 0px #000; }
-        .tag { background: #00ffcc; display: inline-block; padding: 5px 10px; font-weight: bold; border: 2px solid #000; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="FullStackX — A 6-week AI-First software engineering accelerator for beginners and aspiring developers. Learn to build, deploy, and maintain full-stack applications using cutting-edge AI tools." />
+  <title>FullStackX — AI-First Software Engineering Accelerator</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="box">
-        <h1>FullStackX: The 6-Week Accelerator</h1>
-        <div class="tag">LAUNCHING JUNE 2026</div>
-        <p>Building the Next Generation of Software, powered by AI.</p>
-        <p> This is being Maintained By Bhavya Mittal.</p>
-        <p>This line is added by Arnav Jain.</p>
-        <div style="border-top: 2px dashed #000; margin-top: 20px; padding-top: 15px;">
-            <h3>📞 CONTACT DIRECTORY</h3>
-            <p>Dr. Bhoomi Gupta (HOD - ITE) | Prof. (Dr.) Sachin Gupta (Dean - Research & Innovation).</p>
-        </div>
+
+  <!-- ══════════════════════ NAVBAR ══════════════════════ -->
+  <nav class="navbar" id="navbar" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="FullStackX home">
+        Full<span>Stack</span>X
+      </a>
+
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        aria-controls="navLinks"
+        aria-expanded="false"
+        aria-label="Toggle navigation menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks" role="list" aria-hidden="false">
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#audience">Who It's For</a></li>
+        <li><a href="#philosophy">Philosophy</a></li>
+        <li><a href="#outcomes">Outcomes</a></li>
+        <li><a href="#curriculum">Curriculum</a></li>
+        <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+      </ul>
     </div>
-    <div style="border-top: 2px dashed #000; margin-top: 20px; padding-top: 15px;">
-            <h3>📊 ACCELERATOR METRICS</h3>
-            <p>60% of total program time is completely dedicated to hands-on software labs.</p>
+  </nav>
+
+  <!-- ══════════════════════ HERO ════════════════════════ -->
+  <section class="hero" id="hero" aria-labelledby="heroTitle">
+    <div class="container">
+      <div class="hero-label" aria-label="Course status">
+        🚀 &nbsp;Launching 2026
+      </div>
+
+      <h1 class="hero-title" id="heroTitle">
+        Build Tomorrow's Software<br />
+        with <span class="highlight">AI-First</span> Engineering
+      </h1>
+
+      <p class="hero-desc">
+        FullStackX is an immersive <strong>6-week accelerator</strong> designed for beginners
+        and aspiring developers. Go from zero to deploying a full-stack application — powered
+        by the latest AI tools used in the industry today.
+      </p>
+
+      <div class="hero-stats" role="list">
+        <div class="stat" role="listitem">
+          <span class="stat-value">6</span>
+          <span class="stat-label">Weeks</span>
         </div>
+        <div class="stat" role="listitem">
+          <span class="stat-value">60%</span>
+          <span class="stat-label">Hands-on Labs</span>
+        </div>
+        <div class="stat" role="listitem">
+          <span class="stat-value">10</span>
+          <span class="stat-label">Modules</span>
+        </div>
+        <div class="stat" role="listitem">
+          <span class="stat-value">12+</span>
+          <span class="stat-label">AI Tools</span>
+        </div>
+      </div>
+
+      <div class="hero-buttons">
+        <a href="#curriculum" class="btn btn-primary">
+          Explore Curriculum →
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          Contact Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ OVERVIEW ════════════════════ -->
+  <section id="overview" aria-labelledby="overviewTitle">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Course Overview</span>
+        <h2 class="section-title" id="overviewTitle">What is FullStackX?</h2>
+        <p class="section-subtitle">
+          A structured, hands-on journey from AI-assisted creation to disciplined software engineering.
+        </p>
+      </div>
+
+      <div class="overview-grid">
+        <div class="overview-text">
+          <p>
+            FullStackX is an immersive 6-week program created for individuals with minimal to no
+            programming experience who are eager to explore how software development is evolving
+            in the age of AI. The curriculum guides participants through a journey from using AI
+            as a creative assistant to mastering structured software engineering workflows —
+            essential for industry-grade applications.
+          </p>
+          <p>
+            With approximately 60% of time devoted to hands-on labs, learners get real experience
+            using modern AI-driven tools. By course end, participants will not only have built and
+            shipped a full-stack application, but will understand how to collaborate, leverage AI,
+            integrate databases, deploy to the cloud, and maintain code quality — stepping into the
+            world of tomorrow's AI-enabled engineer.
+          </p>
+
+          <h3 style="font-size:0.9rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin:1.5rem 0 0.75rem;">
+            Tools You'll Use
+          </h3>
+          <div class="tools-grid" aria-label="List of tools covered in the course">
+            <span class="tool-tag">GitHub</span>
+            <span class="tool-tag">GitHub Copilot</span>
+            <span class="tool-tag">GitHub Agent</span>
+            <span class="tool-tag">Claude Code</span>
+            <span class="tool-tag">Gemini 2.5</span>
+            <span class="tool-tag">GLM 4.5</span>
+            <span class="tool-tag">Bolt</span>
+            <span class="tool-tag">Lovable</span>
+            <span class="tool-tag">Replit</span>
+            <span class="tool-tag">Supabase</span>
+            <span class="tool-tag">SpecKit</span>
+            <span class="tool-tag">Vercel</span>
+          </div>
+        </div>
+
+        <aside class="overview-card" aria-label="Course details at a glance">
+          <h3>Course Details</h3>
+          <div class="info-item">
+            <div class="info-icon" aria-hidden="true">📅</div>
+            <div>
+              <strong>Total Duration</strong>
+              <span>6 Weeks</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon" aria-hidden="true">🔬</div>
+            <div>
+              <strong>Hands-on Labs</strong>
+              <span>60% of total program time</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon" aria-hidden="true">📚</div>
+            <div>
+              <strong>Modules</strong>
+              <span>10 modules across 6 weeks</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon" aria-hidden="true">🎯</div>
+            <div>
+              <strong>Core Philosophy</strong>
+              <span>AI-First Software Engineering</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon" aria-hidden="true">🚀</div>
+            <div>
+              <strong>Capstone Project</strong>
+              <span>Full-stack app from spec to deployment</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon" aria-hidden="true">👥</div>
+            <div>
+              <strong>Level</strong>
+              <span>Beginner-friendly, no prior coding required</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ AUDIENCE ════════════════════ -->
+  <section id="audience" aria-labelledby="audienceTitle">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Who It's For</span>
+        <h2 class="section-title" id="audienceTitle">Is FullStackX Right for You?</h2>
+        <p class="section-subtitle">
+          Designed for a wide range of learners who want to thrive in the AI-driven future of software.
+        </p>
+      </div>
+
+      <div class="audience-cards">
+        <article class="audience-card">
+          <div class="audience-icon" aria-hidden="true">🌱</div>
+          <h3>Absolute Beginners</h3>
+          <p>
+            No coding background? No problem. FullStackX starts from zero, using AI tools
+            to lower the barrier and make programming accessible from day one.
+          </p>
+        </article>
+
+        <article class="audience-card">
+          <div class="audience-icon" aria-hidden="true">💼</div>
+          <h3>Non-Technical Professionals</h3>
+          <p>
+            Curious how AI is transforming developer workflows? Gain hands-on experience
+            with the tools reshaping software development and boost your technical fluency.
+          </p>
+        </article>
+
+        <article class="audience-card">
+          <div class="audience-icon" aria-hidden="true">⚡</div>
+          <h3>Early Programmers</h3>
+          <p>
+            Already know some basics? Supercharge your workflow by integrating cutting-edge
+            AI tools and adopting modern full-stack practices used in the industry.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ PHILOSOPHY ══════════════════ -->
+  <section class="philosophy" id="philosophy" aria-labelledby="philosophyTitle">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Core Philosophy</span>
+        <h2 class="section-title" id="philosophyTitle">AI-First Software Engineering</h2>
+        <p class="section-subtitle">
+          Inspired by Software 3.0, this program is built around the idea that the role of
+          the engineer is evolving — and you should evolve with it.
+        </p>
+      </div>
+
+      <div class="philosophy-steps" role="list">
+        <article class="step-card" role="listitem">
+          <div class="step-number" aria-label="Phase 1">PHASE 1</div>
+          <div class="step-icon" aria-hidden="true">🤖</div>
+          <h3>AI-Powered Creation</h3>
+          <p>
+            Start with natural-language prompts and AI tools that generate functional code —
+            with minimal syntax and debugging knowledge required. This phase lowers the barrier
+            to entry and makes programming immediately accessible.
+          </p>
+        </article>
+
+        <article class="step-card" role="listitem">
+          <div class="step-number" aria-label="Phase 2">PHASE 2</div>
+          <div class="step-icon" aria-hidden="true">🛠️</div>
+          <h3>AI-Augmented Development</h3>
+          <p>
+            Learn how tools like GitHub Copilot and Claude Code assist in refining, debugging,
+            suggesting, and accelerating code. Shift your mindset from "I must write every line"
+            to "How can AI help me?"
+          </p>
+        </article>
+
+        <article class="step-card" role="listitem">
+          <div class="step-number" aria-label="Phase 3">PHASE 3</div>
+          <div class="step-icon" aria-hidden="true">🏗️</div>
+          <h3>Structured Software Engineering</h3>
+          <p>
+            Transition into disciplined engineering practices: version control, database design,
+            specification-driven development, collaborative workflows, deployment, monitoring,
+            and maintenance — with AI as an integral part of the full lifecycle.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ OUTCOMES ════════════════════ -->
+  <section id="outcomes" aria-labelledby="outcomesTitle">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Learning Outcomes</span>
+        <h2 class="section-title" id="outcomesTitle">What You'll Be Able to Do</h2>
+        <p class="section-subtitle">
+          By the end of FullStackX, you'll have a practical, industry-relevant skill set.
+        </p>
+      </div>
+
+      <div class="outcomes-grid" role="list">
+        <div class="outcome-item" role="listitem">
+          <div class="outcome-check" aria-hidden="true">✓</div>
+          <p>
+            Apply the <strong>AI-First software engineering mindset</strong> across creation and
+            development phases of modern projects.
+          </p>
+        </div>
+
+        <div class="outcome-item" role="listitem">
+          <div class="outcome-check" aria-hidden="true">✓</div>
+          <p>
+            Use <strong>AI coding tools</strong> — Claude Code, Gemini 2.5, GLM 4.5, Bolt,
+            Lovable, Replit, GitHub Copilot, GitHub Agent — to generate, interpret, refine,
+            and debug code.
+          </p>
+        </div>
+
+        <div class="outcome-item" role="listitem">
+          <div class="outcome-check" aria-hidden="true">✓</div>
+          <p>
+            Employ <strong>GitHub</strong> for version control, collaborative development,
+            branching, pull requests, code review, and merging.
+          </p>
+        </div>
+
+        <div class="outcome-item" role="listitem">
+          <div class="outcome-check" aria-hidden="true">✓</div>
+          <p>
+            Design and interact with <strong>databases using Supabase</strong> as part of an
+            AI-assisted development workflow.
+          </p>
+        </div>
+
+        <div class="outcome-item" role="listitem">
+          <div class="outcome-check" aria-hidden="true">✓</div>
+          <p>
+            Translate product requirements into <strong>PRDs</strong> and use
+            <strong>SpecKit</strong> for spec-driven quality and compliance.
+          </p>
+        </div>
+
+        <div class="outcome-item" role="listitem">
+          <div class="outcome-check" aria-hidden="true">✓</div>
+          <p>
+            Architect, build, and deploy <strong>full-stack applications</strong> using
+            platforms like Vercel.
+          </p>
+        </div>
+
+        <div class="outcome-item" role="listitem">
+          <div class="outcome-check" aria-hidden="true">✓</div>
+          <p>
+            Diagnose and troubleshoot both <strong>AI-generated and human-written code</strong>
+            in real development contexts.
+          </p>
+        </div>
+
+        <div class="outcome-item" role="listitem">
+          <div class="outcome-check" aria-hidden="true">✓</div>
+          <p>
+            Work effectively in collaboration with <strong>modern tools and AI assistants</strong>
+            in a team-like workflow.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ CURRICULUM ══════════════════ -->
+  <section class="curriculum" id="curriculum" aria-labelledby="curriculumTitle">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Curriculum</span>
+        <h2 class="section-title" id="curriculumTitle">6-Week Curriculum Outline</h2>
+        <p class="section-subtitle">
+          A carefully sequenced journey from fundamentals to full-stack deployment.
+        </p>
+      </div>
+
+      <div class="weeks-timeline" role="list" aria-label="Week-by-week curriculum">
+
+        <!-- Week 1 -->
+        <div class="week-item" role="listitem">
+          <div class="week-dot">
+            <div class="week-circle" aria-label="Week 1">W1</div>
+          </div>
+          <div class="week-content">
+            <div class="week-header">
+              <span class="week-label">Week 1</span>
+              <h3>Software Development Fundamentals</h3>
+            </div>
+            <ul class="module-list" aria-label="Modules in Week 1">
+              <li class="module-item">
+                <span class="module-badge">MOD 1</span>
+                <div>
+                  <strong>Git Workflows</strong>
+                  <span>Branching, pull requests, code reviews, merging, and version control in collaborative settings.</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Week 2 -->
+        <div class="week-item" role="listitem">
+          <div class="week-dot">
+            <div class="week-circle" aria-label="Week 2">W2</div>
+          </div>
+          <div class="week-content">
+            <div class="week-header">
+              <span class="week-label">Week 2</span>
+              <h3>Deployment Fundamentals</h3>
+            </div>
+            <ul class="module-list" aria-label="Modules in Week 2">
+              <li class="module-item">
+                <span class="module-badge">MOD 2</span>
+                <div>
+                  <strong>CI/CD Pipelines</strong>
+                  <span>Continuous integration, continuous deployment, monitoring, and the basics of production software.</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Week 3 -->
+        <div class="week-item" role="listitem">
+          <div class="week-dot">
+            <div class="week-circle" aria-label="Week 3">W3</div>
+          </div>
+          <div class="week-content">
+            <div class="week-header">
+              <span class="week-label">Week 3</span>
+              <h3>Advanced GitHub &amp; AI-Augmented Coding</h3>
+            </div>
+            <ul class="module-list" aria-label="Modules in Week 3">
+              <li class="module-item">
+                <span class="module-badge">MOD 3</span>
+                <div>
+                  <strong>Advanced GitHub &amp; Collaborative Workflows</strong>
+                  <span>Integrating code review, large-scale cooperation, and code quality practices.</span>
+                </div>
+              </li>
+              <li class="module-item">
+                <span class="module-badge">MOD 4</span>
+                <div>
+                  <strong>AI-Augmented Coding</strong>
+                  <span>Using AI tools to assist writing, refactoring, debugging, and accelerating development.</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Week 4 -->
+        <div class="week-item" role="listitem">
+          <div class="week-dot">
+            <div class="week-circle" aria-label="Week 4">W4</div>
+          </div>
+          <div class="week-content">
+            <div class="week-header">
+              <span class="week-label">Week 4</span>
+              <h3>Architecture Planning &amp; Data Layer</h3>
+            </div>
+            <ul class="module-list" aria-label="Modules in Week 4">
+              <li class="module-item">
+                <span class="module-badge">MOD 5</span>
+                <div>
+                  <strong>Tools, Libraries &amp; Artifacts</strong>
+                  <span>Selecting frameworks and libraries; understanding how full-stack pieces fit together.</span>
+                </div>
+              </li>
+              <li class="module-item">
+                <span class="module-badge">MOD 6</span>
+                <div>
+                  <strong>Database Schema Design</strong>
+                  <span>Designing data models, using Supabase, and integrating with AI-enabled workflows.</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Week 5 -->
+        <div class="week-item" role="listitem">
+          <div class="week-dot">
+            <div class="week-circle" aria-label="Week 5">W5</div>
+          </div>
+          <div class="week-content">
+            <div class="week-header">
+              <span class="week-label">Week 5</span>
+              <h3>Spec-Driven Development &amp; Capstone</h3>
+            </div>
+            <ul class="module-list" aria-label="Modules in Week 5">
+              <li class="module-item">
+                <span class="module-badge">MOD 7</span>
+                <div>
+                  <strong>Test-Driven / Spec-Driven Development with SpecKit</strong>
+                  <span>Writing specs, verifying code against specs, ensuring code meets defined behaviours.</span>
+                </div>
+              </li>
+              <li class="module-item">
+                <span class="module-badge">MOD 8</span>
+                <div>
+                  <strong>Capstone Project</strong>
+                  <span>Build a full-stack application from spec to deployment, applying all tools and practices. (Assigned Project — 12 Weeks Duration)</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Week 6 -->
+        <div class="week-item" role="listitem">
+          <div class="week-dot">
+            <div class="week-circle" aria-label="Week 6">W6</div>
+          </div>
+          <div class="week-content">
+            <div class="week-header">
+              <span class="week-label">Week 6</span>
+              <h3>Code &amp; Data Security</h3>
+            </div>
+            <ul class="module-list" aria-label="Modules in Week 6">
+              <li class="module-item">
+                <span class="module-badge">MOD 9</span>
+                <div>
+                  <strong>Authentication &amp; API Security</strong>
+                  <span>Securing applications, user authentication, API gateways, and permissions.</span>
+                </div>
+              </li>
+              <li class="module-item">
+                <span class="module-badge">MOD 10</span>
+                <div>
+                  <strong>Quality Gates &amp; Code Security</strong>
+                  <span>Code auditing, security checks, and ensuring high quality in AI-driven code environments.</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div><!-- /weeks-timeline -->
+    </div>
+  </section>
+
+  <!-- ══════════════════════ FINAL OUTCOME ═══════════════ -->
+  <section class="final-outcome" id="final-outcome" aria-labelledby="finalTitle">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Final Outcome</span>
+        <h2 class="section-title" id="finalTitle">What You'll Walk Away With</h2>
+        <p class="section-subtitle">
+          Upon completing FullStackX, you're equipped to build, deploy, and maintain
+          software in the AI-enhanced world.
+        </p>
+      </div>
+
+      <div class="outcome-final-grid" role="list">
+        <article class="outcome-final-card" role="listitem">
+          <div class="outcome-final-icon" aria-hidden="true">🏆</div>
+          <h3>A Deployed Full-Stack App</h3>
+          <p>
+            Designed, developed, and deployed a real full-stack application using modern
+            AI-enabled workflows — from spec to production.
+          </p>
+        </article>
+
+        <article class="outcome-final-card" role="listitem">
+          <div class="outcome-final-icon" aria-hidden="true">🧰</div>
+          <h3>Hands-on Tool Experience</h3>
+          <p>
+            Firsthand experience with cutting-edge AI tools in software development,
+            including GitHub Copilot, Claude Code, Supabase, Vercel, and more.
+          </p>
+        </article>
+
+        <article class="outcome-final-card" role="listitem">
+          <div class="outcome-final-icon" aria-hidden="true">🧠</div>
+          <h3>New-Era Engineering Mindset</h3>
+          <p>
+            The mindset and skill-set of the new-era software engineer: one who collaborates
+            with AI, structures code, deploys it, maintains it, and thinks in systems —
+            not just lines of code.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ CONTACT ═════════════════════ -->
+  <section id="contact" aria-labelledby="contactTitle">
+    <div class="container">
+      <div class="section-header" style="text-align:center;">
+        <span class="badge">Contact</span>
+        <h2 class="section-title" id="contactTitle">Get in Touch</h2>
+        <p class="section-subtitle" style="margin-left:auto;margin-right:auto;">
+          Have questions about FullStackX? Reach out to our faculty coordinators.
+        </p>
+      </div>
+
+      <div class="contact-cards">
+
+        <article class="contact-card">
+          <div class="contact-avatar" aria-hidden="true">BG</div>
+          <h3>Dr. Bhoomi Gupta</h3>
+          <p class="contact-role">HoD — Department of Information Technology &amp; Engineering (ITE)</p>
+          <ul class="contact-details" aria-label="Contact details for Dr. Bhoomi Gupta">
+            <li>
+              <span class="icon" aria-hidden="true">📞</span>
+              <a href="tel:9990111970" aria-label="Call Dr. Bhoomi Gupta">9990111970</a>
+            </li>
+            <li>
+              <span class="icon" aria-hidden="true">✉️</span>
+              <a href="mailto:bhoomigupta@mait.ac.in" aria-label="Email Dr. Bhoomi Gupta">bhoomigupta@mait.ac.in</a>
+            </li>
+          </ul>
+        </article>
+
+        <article class="contact-card">
+          <div class="contact-avatar" aria-hidden="true">SG</div>
+          <h3>Prof. (Dr.) Sachin Gupta</h3>
+          <p class="contact-role">Dean, Research and Innovation</p>
+          <ul class="contact-details" aria-label="Contact details for Prof. Sachin Gupta">
+            <li>
+              <span class="icon" aria-hidden="true">📞</span>
+              <a href="tel:9811468541" aria-label="Call Prof. Sachin Gupta">9811468541</a>
+            </li>
+            <li>
+              <span class="icon" aria-hidden="true">✉️</span>
+              <a href="mailto:deanresearch@mait.ac.in" aria-label="Email Prof. Sachin Gupta">deanresearch@mait.ac.in</a>
+            </li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ FOOTER ══════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <p>
+      &copy; <span id="currentYear"></span> &nbsp;<strong>FullStackX</strong> &nbsp;—&nbsp;
+      AI-First Software Engineering Accelerator &nbsp;|&nbsp;
+      Maharaja Agrasen Institute of Technology
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
 
